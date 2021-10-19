@@ -57,6 +57,7 @@ https://github.com/kiegroup/kogito-examples/tree/stable/process-kafka-quickstart
     
 # Addons
 See https://docs.jboss.org/kogito/release/latest/html_single/#ref-kogito-add-ons_kogito-creating-running
+https://docs.jboss.org/kogito/release/latest/html_single/#con-kogito-runtime-events_kogito-configuring
 ## Messaging Addon
     <dependency>
       <groupId>org.kie.kogito</groupId>
@@ -76,12 +77,13 @@ See https://docs.jboss.org/kogito/release/latest/html_single/#ref-kogito-add-ons
 `org.kie.kogito.event.EventPublisher` interface
 
 ## Jobs addon
+See https://docs.jboss.org/kogito/release/latest/html_single/#con-jobs-service_kogito-configuring
+
     <dependency>
       <groupId>org.kie.kogito</groupId>
       <artifactId>kogito-addons-quarkus-jobs-management</artifactId>
       <version>1.12</version>
     </dependency>
-
 **Infra dependencies**
 - Kafka
 - Infinispan
@@ -95,6 +97,7 @@ See https://docs.jboss.org/kogito/release/latest/html_single/#ref-kogito-add-ons
  - `mp.messaging.outgoing.kogito-job-service-job-status-events.topic=kogito-jobs-events`
  
 ## Events addon (default impl)
+See https://docs.jboss.org/kogito/release/latest/html_single/#con-kogito-runtime-events_kogito-configuring
 
     <dependency> 
       <groupId>org.kie.kogito</groupId>  
@@ -107,6 +110,8 @@ See https://docs.jboss.org/kogito/release/latest/html_single/#ref-kogito-add-ons
 https://docs.jboss.org/kogito/release/latest/html_single/#proc-event-listeners-registering_kogito-configuring
 
 ## Monitoring addon
+See https://docs.jboss.org/kogito/release/latest/html_single/#_metrics_monitoring_in_kogito_services
+
 **For elasticsearch**
 See https://docs.jboss.org/kogito/release/latest/html_single/#proc-elastic-metrics-monitoring_kogito-configuring
 
@@ -184,6 +189,7 @@ See https://docs.jboss.org/kogito/release/latest/html_single/#proc-kafka-streams
     </dependency>
 
 ## Process Management Console addon
+See https://docs.jboss.org/kogito/release/latest/html_single/#con-bpmn-process-management-addon_kogito-configuring
 
     <dependency>
       <groupId>org.kie.kogito</groupId>
@@ -191,12 +197,14 @@ See https://docs.jboss.org/kogito/release/latest/html_single/#proc-kafka-streams
     </dependency>
 
 ## Process SVG addon
+See https://docs.jboss.org/kogito/release/latest/html_single/#con-bpmn-process-svg-addon_kogito-developing-process-services
 
     <dependency>
       <groupId>org.kie.kogito</groupId>
       <artifactId>kogito-addons-quarkus-process-svg</artifactId>
     </dependency>
 ## Task management addon
+See https://docs.jboss.org/kogito/release/latest/html_single/#con-task-console_kogito-developing-process-services
 
     <dependency>
       <groupId>org.kie.kogito</groupId>
